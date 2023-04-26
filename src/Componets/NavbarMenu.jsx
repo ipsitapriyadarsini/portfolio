@@ -1,24 +1,33 @@
 import React from "react";
-import "../Sass/Navbar.scss";
-import logo from "./logo.png";
+
 
 const NavbarMenu = () => {
   return (
     <>
       <header>
         <div class="main-header">
-          <section className="image_content">
-            <img src={logo} alt="Ipsita" />
+          <section className="image_content">IPSITA'S</section>
+          <section className="verticalBar">
+          <hr />
           </section>
           <ul className="contact_items">
-            <li>01.CALL: +91-764770967</li>
-            <li>02.Write: ipsitacet@gmail.com</li>
+            <li>
+              <span className="lable">01.  CALL:</span>
+              <span className="value"> +91-8917338373</span>
+            </li>
+            <li>
+              <span className="lable">02.  WRITE:</span>
+              <span className="value"> ipsitacet2015@gmail.com</span>
+            </li>
           </ul>
+
           <section className="menu_container">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </section>
         </div>
-        <div className="submain_header">Protfolio</div>
+        <div className="submain_header">
+          <span className="portfolio">PORTFOLIO</span>
+        </div>
       </header>
     </>
   );
