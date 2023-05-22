@@ -1,0 +1,11 @@
+.aboutme_container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  background-color: $light-dark;
+  color: $white;
+  .ipsita {
+    width: 40%;
+  }
+}

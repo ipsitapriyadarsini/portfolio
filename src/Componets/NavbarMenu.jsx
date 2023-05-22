@@ -5,7 +5,7 @@ const NavbarMenu = () => {
   return (
     <>
       <header>
-        <div class="main-header">
+        <div className="main-header">
           <section className="image_content">IPSITA'S</section>
           <section className="verticalBar">
           <hr />
@@ -22,7 +22,7 @@ const NavbarMenu = () => {
           </ul>
 
           <section className="menu_container">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i className="fa fa-bars" aria-hidden="true"></i>
           </section>
         </div>
         <div className="submain_header">

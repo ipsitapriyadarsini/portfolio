@@ -5,21 +5,21 @@ const LeftSidebar = () => {
   return (
     <>
       <aside className="left-sidebar">
-      <span class="lh_dec color-bg"></span>
+      <span className="lh_dec color-bg"></span>
         <div className="left-side-social">
           <ul>
             <li className="social-list" style={{ color: "#0e76a8" }}>
-              <i class="fa fa-linkedin"></i>
+              <i className="fa fa-linkedin"></i>
             </li>
             <li className="social-list" style={{ color: "white" }}>
-              <i class="fa fa-github"></i>
+              <i className="fa fa-github"></i>
             </li>
             <li className="social-list" style={{ color: "red" }}>
-              <i class="fa fa-youtube"></i>
+              <i className="fa fa-youtube"></i>
             </li>
 
             <li className="social-list" style={{ color: "blue" }}>
-              <i class="fa fa-facebook-f"></i>
+              <i className="fa fa-facebook-f"></i>
             </li>
           </ul>
         </div>
