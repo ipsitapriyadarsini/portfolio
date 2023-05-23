@@ -5,10 +5,10 @@
 }
 .body_container {
   display: flex;
-  margin: 80px;
   flex-direction: column;
   align-items: center;
   height: auto;
+  margin:0 80px;
 }
 .banner .aboutme_container{
   flex:1;

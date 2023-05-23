@@ -1,11 +1,21 @@
 .aboutme_container {
   padding: 2rem;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 60% 40%;
+  // grid-template-columns: repeat(2,1fr);
   column-gap: 10px;
   background-color: $light-dark;
   color: $white;
+  .content {
+    margin-right: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
   .ipsita {
-    width: 40%;
+    width: 100%;
+    float: right;
+  }
+  p {
+    font-size: 1.01rem;
+    text-indent: 2em;
   }
 }

@@ -6,6 +6,8 @@ import LeftSidebar from "./Componets/Leftcomponents/LeftSidebar";
 import RightSidebar from "./Componets/RightSidebar";
 import Home from "./Componets/BodyComponents/Home";
 import AboutMe from "./Componets/BodyComponents/AboutMe";
+import WorkExperience from "./Componets/BodyComponents/WorkExperience";
+import Footer from "./Componets/Footer";
 
 const App = () => {
   return (
@@ -13,7 +15,9 @@ const App = () => {
       <div className="body_container">
         <NavbarMenu />
         <Home />
-        <AboutMe/>
+        <AboutMe />
+        <WorkExperience />
+        <Footer />
       </div>
       <LeftSidebar />
       <RightSidebar />
