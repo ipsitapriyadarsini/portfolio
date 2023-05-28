@@ -1,28 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import Menu from "./Menu"
 
 
 const NavbarMenu = () => {
+  const [isShown, setIsShown] = useState(false);
+
   return (
     <>
       <header>
         <div className="main-header">
           <section className="image_content">IPSITA'S</section>
-          <section className="verticalBar">
-          <hr />
-          </section>
           <ul className="contact_items">
             <li>
               <span className="lable">01.  CALL:</span>
-              <span className="value"> +91-8917338373</span>
+              <span className="value"> +91-89xxxxxx73</span>
             </li>
             <li>
               <span className="lable">02.  WRITE:</span>
               <span className="value"> ipsitacet2015@gmail.com</span>
             </li>
           </ul>
-
-          <section className="menu_container">
-            <i className="fa fa-bars" aria-hidden="true"></i>
+          <section className="menu_container" onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}>
+            <i className="fa fa-bars" aria-hidden="true">
+            </i>
+            {isShown && (
+              <Menu />
+            )}
           </section>
         </div>
         <div className="submain_header">
