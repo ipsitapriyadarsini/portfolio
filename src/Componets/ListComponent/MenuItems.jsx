@@ -18,4 +18,9 @@ export const menuListItems = [{
     title: "Experience",
     path: ""
 },
+{
+    id: 5,
+    title: "Contact",
+    path: ""
+},
 ]
