@@ -1,0 +1,30 @@
+.menu_container {
+    position: relative;
+
+    .list-menu-items {
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        width: 20rem;
+        font-size: initial;
+        color: $white;
+        background: $light-dark-bg;
+
+        .list_menu {
+            list-style: none;
+            margin: 2rem;
+
+            .list_items {
+                padding: .8rem;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.071);
+                    cursor: pointer;
+                    color: $orange;
+                    transition: all 1s ease;
+                }
+            }
+
+        }
+    }
+}
