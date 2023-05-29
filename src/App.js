@@ -16,7 +16,7 @@ const App = () => {
     <>
       <div className="body_container">
         <Routes>
-          <Route path="my_portfolio" element={<NavBarMenu />} />
+          <Route path="/" element={<NavBarMenu />} />
         </Routes>
         <Home />
         <AboutMe />
@@ -24,7 +24,7 @@ const App = () => {
         <Footer />
       </div>
       <Routes>
-        <Route path="/my_portfolio" element={<LeftSidebar />} />
+        <Route path="/" element={<LeftSidebar />} />
       </Routes>
       <RightSidebar />
     </>
