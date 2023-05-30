@@ -12,7 +12,7 @@ const NavBarMenu = () => {
                     <ul className="contact_items">
                         <li>
                             <span className="lable">01.  CALL:</span>
-                            <span className="value"> +91-89xxxxxx73</span>
+                            <span className="value"> +91-8917338373</span>
                         </li>
                         <li>
                             <span className="lable">02.  WRITE:</span>

@@ -6,14 +6,21 @@
   column-gap: 10px;
   background-color: $light-dark;
   color: $white;
+
   .content {
     margin-right: 1rem;
     font-family: 'Poppins', sans-serif;
   }
+
   .ipsita {
-    width: 100%;
-    float: right;
+    filter: drop-shadow(-40px 0px 100px #998677);
+
+    img {
+      width: 100%;
+      float: right;
+    }
   }
+
   p {
     font-size: 1.01rem;
     text-indent: 2em;

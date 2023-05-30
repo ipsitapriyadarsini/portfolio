@@ -1,5 +1,5 @@
 import React from 'react'
-import Pooja from "../../assets/images/pooja.jpg";
+import Pooja from "../../assets/images/rmbpooja.png";
 
 const AboutMe = () => {
   return (
@@ -33,7 +33,9 @@ const AboutMe = () => {
 
           <p> Feel free to personalize the template based on your own experiences, skills, and personality. Remember to keep it concise, engaging, and focused on highlighting your strengths as a React front-end developer. Good luck with your portfolio!</p>
         </div>
-        <img src={Pooja} alt="Ipsita" className="ipsita" />
+        <div className="ipsita">
+          <img src={Pooja} alt="Ipsita" />
+        </div>
       </div >
     </>
   )
