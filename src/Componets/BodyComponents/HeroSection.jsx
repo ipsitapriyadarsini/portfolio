@@ -2,7 +2,7 @@ import React from "react";
 import Image from "../../assets/images/desktop.jpg";
 
 
-const Home = () => {
+const HeroSection = () => {
   return (
     <>
       <div className="banner">
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HeroSection;
