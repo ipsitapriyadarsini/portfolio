@@ -1,6 +1,7 @@
 .aboutme_container {
-  padding: 2rem;
+  padding-left: 2rem;
   display: grid;
+  place-items: center;
   grid-template-columns: 60% 40%;
   // grid-template-columns: repeat(2,1fr);
   column-gap: 10px;
@@ -10,14 +11,18 @@
   .content {
     margin-right: 1rem;
     font-family: 'Poppins', sans-serif;
+
+    h2 {
+      color: $orange;
+    }
   }
 
   .ipsita {
+    margin: 2rem 0;
     filter: drop-shadow(-40px 0px 100px #998677);
 
     img {
       width: 100%;
-      float: right;
     }
   }
 
