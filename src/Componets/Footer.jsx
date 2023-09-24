@@ -2,7 +2,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='parent-footer'>Footer</div>
+    <footer className='parent-footer'>
+
+      <p className='copyright'>Copyright © 2022 | All Rights Reserved by Ipsita</p>
+    </footer>
   )
 }
 

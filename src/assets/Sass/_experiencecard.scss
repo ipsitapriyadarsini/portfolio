@@ -3,7 +3,8 @@
 
     .img-container {
         max-width: 20rem;
-        max-height: 20rem;
+        max-height: 15rem;
+        min-height: 10rem;
         box-shadow: $box-shadow;
         border-radius: $border-radius8px;
 
@@ -18,7 +19,6 @@
             cursor: pointer;
             animation: 2s both pulse;
         }
-
 
     }
 }

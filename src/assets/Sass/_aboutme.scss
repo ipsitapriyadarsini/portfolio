@@ -16,12 +16,13 @@
       text-align: center;
       color: $orange;
     }
-    
+
   }
 
   .ipsita {
     margin: 2rem 0;
-    filter: drop-shadow(-40px 0px 100px #998677);
+    filter: drop-shadow(-40px -10px 100px #998677);
+    overflow: hidden;
 
     img {
       width: 100%;
