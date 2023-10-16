@@ -1,25 +1,25 @@
 export const menuListItems = [{
-    id: 1,
+    id: "home",
     title: "Home",
     path: ""
 },
 {
-    id: 2,
+    id: "about",
     title: "About",
     path: ""
 },
 {
-    id: 3,
+    id: "project",
     title: "Projects",
     path: ""
 },
 {
-    id: 4,
+    id: "experience",
     title: "Experience",
     path: ""
 },
 {
-    id: 5,
+    id: "contact",
     title: "Contact",
     path: ""
 },

@@ -42,10 +42,7 @@ const experinceDetails = [
 
 const ExperienceCard = () => {
     return (
-
-
         experinceDetails.map((item) =>
-
             <div className='d-flex'>
                 <h4 key={item.projId} className='exp-title'>{item.projectname}</h4>
                 <section className='card-conatainer' key={item.projId}>

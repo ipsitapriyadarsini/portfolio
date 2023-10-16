@@ -6,7 +6,7 @@ const Menu = () => {
         <section className="list-menu-items">
             <ul className="list_menu">
                 {menuListItems.map((item) => (
-                    <li className="list_items" key={item.id}>{item.title}</li>
+                    <li className="list_items" id={item.id} key={item.id}>{item.title}</li>
                 ))}
             </ul>
         </section>
