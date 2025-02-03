@@ -1,0 +1,18 @@
+@use 'variables' as *;
+.clickable-button {
+    margin: 1rem;
+    width: fit-content;
+    padding: .5rem;
+    background: $orange;
+    border-radius: $border-radius4px;
+
+    &:hover {
+        position: relative;
+        cursor: pointer;
+        animation: 2s both bounce;
+    }
+
+    .m_right {
+        margin-right: .5rem;
+    }
+}

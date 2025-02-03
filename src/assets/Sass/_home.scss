@@ -1,0 +1,41 @@
+@use 'variables' as v;
+@use 'centeralignelement' as *;
+.banner {
+  display: flex;
+  width: 100%;
+  height: 50rem;
+  position: relative;
+
+  .heading_container {
+    @include center-div-flex();
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, 0%);
+    color: v.$white;
+    background-color: rgba(0, 0, 0, 0.7);
+    // background: linear-gradient(90deg,
+    //     rgba(245, 117, 0, 0.7038165608040091) 0%,
+    //     rgba(0, 0, 0, 0.7010154403558299) 100%);
+
+    h1 {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 800;
+      font-size: 5rem;
+      padding: 7rem 0 0 2rem;
+    }
+
+    h2 {
+      font-weight: 800;
+      font-size: 3rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+}

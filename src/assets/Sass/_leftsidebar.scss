@@ -1,0 +1,132 @@
+@use 'variables' as *;
+.left-sidebar {
+  width: 80px;
+  background-color: $dark;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  bottom: 150px;
+  z-index: 22;
+
+  .lh_dec {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    border-radius: 50%;
+  }
+
+  .color-bg {
+    background-color: $orange;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 70px;
+    top: 0;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .left-side-social {
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+    margin-left: -22px;
+    width: 40px;
+
+    ul {
+      text-align: center;
+
+      .social-list {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-table;
+        margin-right: 10px;
+        border: 1px solid $light-border;
+        transition: background-color 200ms ease-out;
+
+        &:hover {
+          background-color: $orange;
+
+        }
+      }
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 144px;
+    width: 60px;
+    height: 8px;
+    left: 50%;
+    margin-left: -30px;
+    background-color: $orange ;
+  }
+}
+
+.share_btn {
+  position: fixed;
+  bottom: 0;
+  width: 80px;
+  height: 150px;
+  z-index: 31;
+  cursor: pointer;
+  background-color: $orange;
+
+  span {
+    position: relative;
+    top: 106px;
+    left: 18px;
+    font-family: "robot", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    color: $white;
+    text-align: center;
+  }
+
+  & .fa-plus {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    color: $white;
+    font-size: 0.7rem;
+    line-height: 28px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    width: 1px;
+    height: 90px;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  &:hover:after {
+    top: 50%;
+    span{
+      color: $orange;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #393939;
+    transition: all 200ms ease-out;
+   
+  }
+}

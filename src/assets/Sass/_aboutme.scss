@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+.aboutme_container {
+  padding-left: 2rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 60% 40%;
+  // grid-template-columns: repeat(2,1fr);
+  column-gap: 10px;
+  background-color: $light-dark;
+  color: $white;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+    font-family: 'Poppins', sans-serif;
+
+    h2 {
+      text-align: center;
+      color: $orange;
+    }
+
+  }
+
+  .ipsita {
+    margin: 2rem 0;
+    filter: drop-shadow(-40px -10px 100px #998677);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: 1.01rem;
+    text-indent: 2em;
+  }
+}
