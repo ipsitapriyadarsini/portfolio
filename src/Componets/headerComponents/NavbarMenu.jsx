@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import Menu from "./Menu";
 
 const NavBarMenu = ({ sectionsRef }) => {
@@ -8,7 +9,7 @@ const NavBarMenu = ({ sectionsRef }) => {
     <>
       <header>
         <div className="main-header">
-          <section className="image_content">IPSITA'S</section>
+          <section className="image_content">IPSITA&apos;S</section>
           <ul className="contact_items">
             <li>
               <span className="lable">01. CALL:</span>
@@ -19,6 +20,9 @@ const NavBarMenu = ({ sectionsRef }) => {
               <span className="value"> ipsitapriyadarsini2024@gmail.com</span>
             </li>
           </ul>
+          <span className="get-in-touch" onClick={() => {}}>
+            Get in Touch
+          </span>
           <section
             className="menu_container"
             onMouseEnter={() => setIsShown(true)}

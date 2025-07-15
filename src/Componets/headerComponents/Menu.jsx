@@ -1,8 +1,16 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import { useNavigate } from "react-router-dom";
 import { menuListItems } from "../../Utilities/ListArrays/MenuItems";
 
 const Menu = ({ sectionsRef }) => {
+  const navigate = useNavigate();
+
   const handleScrollToSection = (sectionId) => {
+    if (sectionId === "blog") {
+      navigate("/blog"); // Navigate to the blog page
+      return;
+    }
+
     if (sectionsRef[sectionId]?.current) {
       sectionsRef[sectionId].current.scrollIntoView({
         behavior: "smooth",

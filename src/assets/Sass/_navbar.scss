@@ -1,4 +1,5 @@
 @use 'variables';
+
 header {
   position: fixed;
   top: 0;
@@ -16,7 +17,8 @@ header {
     background-color: variables.$dark;
 
     & .image_content {
-      width: 10vw;
+      width: auto;
+      min-width: 120px;
       height: 100%;
       display: grid;
       place-items: center;
@@ -38,12 +40,13 @@ header {
 
         & .lable {
           margin-left: 20px;
+          font-size: 12px;
           color: variables.$light;
         }
 
         & .value {
           padding-left: 6px;
-          color:variables.$orange;
+          color: variables.$orange;
           cursor: pointer;
 
           &:hover {
@@ -76,13 +79,82 @@ header {
     background-color: variables.$orange;
     display: grid;
     place-items: center;
+    width: auto;
 
     & .portfolio {
       padding: 10px 20px;
-      width: auto;
+
       height: auto;
       background-color: rgba(0, 0, 0, 0.1);
       letter-spacing: 5px;
     }
   }
 }
+
+.get-in-touch {
+  display: none
+}
+
+/* Responsive Styles */
+
+/* Phones: Up to 480px */
+@media (max-width: 480px) {
+  .main-header {
+    .image_content {
+      font-size: 1rem;
+    }
+
+    .contact_items {
+      display: none !important;
+    }
+
+    .submain_header {
+      min-width: 230px !important;
+    }
+  }
+}
+
+/* Landscape phones & smaller portrait tablets: 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .main-header {
+    .image_content {
+      font-size: 1.5rem !important;
+    }
+
+    .contact_items {
+      display: none !important;
+    }
+
+    .get-in-touch {
+      margin-top: 2rem;
+      margin-right: -2rem;
+      display: inline-block;
+      color: variables.$orange;
+      cursor: pointer;
+    }
+  }
+
+}
+
+/* Landscape tablets & laptops: 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1270px) {
+  .main-header {
+    .contact_items {
+      display: none !important;
+    }
+
+    .get-in-touch {
+      margin-top: 2rem;
+      margin-right: -2rem;
+      display: inline-block;
+      color: variables.$orange;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Larger displays: 1025px to 1366px */
+@media (min-width: 1025px) and (max-width: 1366px) {}
+
+/* Extra wide monitors and TVs: Above 1366px */
+@media (min-width: 1367px) {}
