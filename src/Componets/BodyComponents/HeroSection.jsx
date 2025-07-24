@@ -1,4 +1,4 @@
-import React from "react";
+
 import Image from "../../assets/images/desktop.jpg";
 import { Bounce, Slide } from "react-awesome-reveal";
 
