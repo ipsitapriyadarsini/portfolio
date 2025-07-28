@@ -1,4 +1,5 @@
-@use 'variables' as *;
+@use '../variables' as *;
+
 .left-sidebar {
   width: 80px;
   background-color: $dark;
@@ -109,10 +110,11 @@
     left: 50%;
     background: rgba(255, 255, 255, 0.2);
   }
-  
+
   &:hover:after {
     top: 50%;
-    span{
+
+    span {
       color: $orange;
     }
   }
@@ -127,6 +129,6 @@
     z-index: 1;
     background: #393939;
     transition: all 200ms ease-out;
-   
+
   }
 }

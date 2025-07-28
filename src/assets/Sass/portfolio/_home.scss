@@ -1,5 +1,6 @@
-@use 'variables' as v;
-@use 'centeralignelement' as *;
+@use '../variables' as v;
+@use '../centeralignelement' as *;
+
 .banner {
   display: flex;
   width: 100%;

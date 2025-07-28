@@ -5,7 +5,7 @@ const ExperienceCard = ({ experienceList = [], bgColor = "white" }) => {
   }
 
   return experienceList.map((item) => (
-    <div className="d-flex" key={item.projId}>
+    <div  key={item.projId}>
       <h4 className="exp-title">{item.projectname}</h4>
       <section className="card-conatainer animate__animated animate__pulse">
         <div
