@@ -1,5 +1,23 @@
+@use 'variables' as *;
+
 .work-experience-container {
     padding: 1rem;
+
+    .experience_content {
+        display: flex;
+
+        .exp-title {
+            margin-left: 1rem;
+        }
+    }
+}
+
+.project-container {
+
+    width: 100%;
+    padding: 1rem;
+    background-color: $light-dark;
+    color: $white;
 
     .experience_content {
         display: flex;

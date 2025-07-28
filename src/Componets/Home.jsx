@@ -6,13 +6,14 @@ import WorkExperience from "./BodyComponents/WorkExperience";
 import Footer from "./Footer";
 import LeftSidebar from "./Leftcomponents/LeftSidebar";
 import RightSidebar from "./RightSidebar";
+import PersonalProjects from "./BodyComponents/PersonalProjects";
 
 const Home = () => {
   const sectionsRef = {
     home: useRef(null),
     about: useRef(null),
     experience: useRef(null),
-    // project: useRef(null),
+    project: useRef(null),
     contact: useRef(null),
   };
   return (
@@ -24,6 +25,8 @@ const Home = () => {
         <AboutMe sectionsRef={sectionsRef.about} />
 
         <WorkExperience sectionsRef={sectionsRef.experience} />
+
+        <PersonalProjects sectionsRef={sectionsRef.project} />
 
         <Footer sectionsRef={sectionsRef.contact} />
       </div>

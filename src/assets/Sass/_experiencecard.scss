@@ -3,10 +3,12 @@
 .card-conatainer {
     margin: 1rem;
 
+
     .img-container {
         max-width: 20rem;
         max-height: 15rem;
         min-height: 10rem;
+        background: $white;
         box-shadow: $box-shadow;
         border-radius: $border-radius8px;
 
@@ -22,5 +24,8 @@
             animation: 2s both pulse;
         }
 
+        &.white-shadow {
+            box-shadow: $box-shadow-white;
+        }
     }
 }

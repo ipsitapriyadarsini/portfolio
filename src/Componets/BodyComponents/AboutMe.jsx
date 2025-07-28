@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import Pooja from "../../assets/images/rmbpooja.png";
 import Button from "../../Utilities/reUsableComponents/Button";
 import resume from "../../assets/resume.pdf";
 
-const AboutMe = ({sectionsRef}) => {
+const AboutMe = ({ sectionsRef }) => {
   const resumeDownload = async () => {
     const aTag = document.createElement("a");
     aTag.href = resume;
@@ -16,15 +17,16 @@ const AboutMe = ({sectionsRef}) => {
         <h2>ABOUT ME</h2>
         <br />
         <h3 style={{ textAlign: "center" }}>
-          A dedicated Full-Stack Developer based in Bengaluru, Karnataka, India
+          A creative dedicated Web Developer based in Bengaluru, Karnataka,
+          India
         </h3>
         <br />
         <p>
           As a Developer, I possess a versatile skill set encompassing front-end
           and back-end technologies, including HTML, CSS, JavaScript, React Js,
-          TypeScript, Node.js, Express, MongoDB, SQL, Bootstrap, Tailwind, SCSS,
-          and Material-UI. I excel in building and maintaining responsive
-          websites and web applications that deliver seamless user experiences.
+          Redux, Vue Js, Next Js, TypeScript, Node.js, Express Js and MongoDB. I
+          excel in building and maintaining responsive websites and web
+          applications that deliver seamless user experiences.
         </p>
         <br />
         <p>
